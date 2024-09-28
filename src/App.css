@@ -1,3 +1,42 @@
+i {
+  color: #34B7A7; /* Change to your desired color */
+}
+
+ul {
+  padding-left: 0;  /* Remove padding */
+  margin-left: 0;   /* Remove margin */
+}
+
+.custom-li {
+  margin-bottom: 20px; /* Adjust the value for desired space */
+} 
+
+ /* .custom-underline {
+  text-decoration-color: #34B7A7;
+}  */
+
+.custom-underline {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack the text and underline */
+  align-items: center; /* Center the text and underline */
+  position: relative; /* Position relative for the pseudo-element */
+  padding-bottom: 5px; /* Space for the underline */
+}
+
+.custom-underline::after { 
+  content: ''; /* Necessary for the pseudo-element */
+  width: 3%; /* Short underline width */
+  height: 4px; /* Thickness of the underline */
+  background-color: #34B7A7; /* Color of the underline */
+  position: absolute; /* Position absolute for positioning */
+  bottom: -13px; /* Position at the bottom of the text */
+  left: 50%; /* Center the underline */
+  transform: translateX(-50%); /* Adjust to center align the underline */
+}
+
+
+
+
 body {
   background-color: "#E9E8E6"
 }
@@ -15,15 +54,10 @@ body {
   border-color: #7cc
 }
 
-.bullet {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-  border-radius: 50%;
-  background-color: green;
+/* to remove bullets from an unordered list */
+ul {
+  list-style: none;
 }
-
 
 /* Fonts.css */
 
@@ -130,18 +164,31 @@ body {
 
 /* Remove default link styles */
 .custom-link {
-  text-decoration: none; /* Removes the default underline */
-  
+  position: relative;
+  color: #000; /* Default link color */
+  text-decoration: none; /* Remove underline */
 }
 
-/* Change color on focus and active state */
-.custom-link:focus, 
-.custom-link:active {
-  color: #5C210E; /* New color when the link is focused or clicked */
+.custom-link .underline {
+  content: '';
+  position: absolute;
+  width: 35%; /* Width of the underline */
+  height: 3px; /* Height of the underline */
+  background-color: transparent; /* Default background */
+  bottom: -5px; /* Adjust position below the text */
+  left: 16%; /* Center the underline */
+  transition: background-color 0.3s, width 0.3s; /* Smooth transition */
 }
 
-/* About Page */
-.custom-css {
-  text-decoration: underline;
-  text-underline-offset: 20px;
+.custom-link.active {
+  color: #34B7A7; /* Color for active link */
+}
+
+.custom-link.active .underline {
+  background-color: #34B7A7; /* Color for active underline */
+}
+
+
+.bg-color {
+  background-color: #34B7A7;
 }

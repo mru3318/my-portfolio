@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import HomeImage from "../assets/images/main3.jpg";
 import "../App.css";
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="text-center home-container">
@@ -33,6 +35,7 @@ function Home() {
               paddingLeft: "35px",
               paddingRight: "35px",
             }}
+            onClick={() => navigate("/about")}
           >
             ABOUT ME
           </button>
