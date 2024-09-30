@@ -31,7 +31,7 @@ function Navigation() {
               MAYUR
             </Link>
             <ul className="navbar-nav col-lg-6 justify-content-lg-center">
-              {["Home", "About", "Resume", "Contact"].map((item) => (
+              {["Home", "About", "Resume"].map((item) => (
                 <li className="nav-item" key={item}>
                   <Link
                     className={`nav-link custom-link ${

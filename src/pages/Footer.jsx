@@ -1,28 +1,22 @@
 import React from "react";
-import facebook from "../assets/icons/facebook.png";
-import instagram from "../assets/icons/instagram.png";
-import linkedin from "../assets/icons/linkedin.png";
 
 function Footer() {
   return (
     <>
       <div className="mt-5 mb-4" style={{ textAlign: "center" }}>
-        <h6>&#169; Copyright Mayur All Rights Reserved </h6>
+        <h6>&#169; Copyright Mayur | All Rights Reserved </h6>
 
-        <button className="btn">
-          <img
-            src={facebook}
-            alt="facebook"
-            height="40px"
-            style={{ marginRight: "10px" }}
-          />
-        </button>
-        <button className="btn">
-          <img src={instagram} alt="instagram" height="53px" />
-        </button>
-        <button className="btn">
-          <img src={linkedin} alt="linkedin" height="53px" />
-        </button>
+        <div class="social-links">
+          <a href="https://facebook.com/mayur.ukande.927" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://instagram.com/ukande3318" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://linkedin.com/in/mayur-ukande" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
       </div>
     </>
   );
