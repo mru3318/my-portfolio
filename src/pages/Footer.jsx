@@ -7,13 +7,25 @@ function Footer() {
         <h6>&#169; Copyright Mayur | All Rights Reserved </h6>
 
         <div class="social-links">
-          <a href="https://facebook.com/mayur.ukande.927" target="_blank">
+          <a
+            href="https://facebook.com/mayur.ukande.927"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i class="bi bi-facebook"></i>
           </a>
-          <a href="https://instagram.com/ukande3318" target="_blank">
+          <a
+            href="https://instagram.com/ukande3318"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i class="bi bi-instagram"></i>
           </a>
-          <a href="https://linkedin.com/in/mayur-ukande" target="_blank">
+          <a
+            href="https://linkedin.com/in/mayur-ukande"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i class="bi bi-linkedin"></i>
           </a>
         </div>
